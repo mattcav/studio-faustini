@@ -1,0 +1,36 @@
+.nav {
+    text-align: center;
+    display: block;
+    width: auto;
+    overflow: hidden;
+    margin: -0.25rem 0 1.125rem;
+    padding-top: 0.25rem;
+    margin-right: 0;
+    @media #{$large-up} {
+        text-align: left;
+    }
+}
+
+.nav__item {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0.625rem;
+    font-weight: 300;
+    font-size: rem-calc(16);
+    @media #{$medium-up} {
+        font-size:rem-calc(18);
+    }
+    @media #{$large-up} {
+        display:block;
+    }
+}
+
+.nav__link {
+    color:$white;
+    line-height: 2.5;
+    padding:0 0.25em 0;
+    &:hover {
+        color:$pearl;
+    }
+}

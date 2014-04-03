@@ -1,3 +1,8 @@
+@import "colors";
+@import "fonts";
+@import "mixin";
+
+
 @import "settings";
 @import "foundation";
 
@@ -38,3 +43,23 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// layout
+@import "layout/header";
+
+
+// modules
+@import "modules/atoms";
+
+@import "modules/logo";
+@import "modules/nav";
+@import "modules/vcard";
+@import "modules/home";
+
+@import "modules/punti-di-forza";
+@import "modules/chi-siamo";
+
+
+
+//theme
+@import "theme";

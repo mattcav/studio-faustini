@@ -1,0 +1,39 @@
+.header {
+    @media #{$large-up}{ 
+        @include grid-column(
+            $columns:3
+            );
+        height:100vh;
+        max-width: 15rem;
+        background: $dark;
+        
+        // >IE9
+        display:flex;
+        flex: 1 1 26em;
+        flex-direction:column;
+        align-items: stretch;
+        justify-content: space-between;
+
+        @media #{$large-up} {
+            position:absolute;
+            z-index:10;
+        }
+    }
+}
+.header .logo {
+    padding:1rem 0 0rem;
+
+    @media #{$large-up}{ 
+        padding:4rem 0 2rem;
+    }
+}
+
+.header .logo,
+.header .nav,
+.header .vcard {
+    @media #{$large-up} {
+        max-width: 12rem;
+        @include center-el();
+    }
+}
+

@@ -1,0 +1,35 @@
+.vcard {
+    font-family: $sans;
+    list-style: none;
+    font-weight: 300;
+    color:$pearl;
+    border:medium none;
+
+    @media #{$large-up}{ 
+        text-align: left;
+    }
+}
+.street-address {
+    text-transform: uppercase;
+}
+.vcard__link {
+    color:$pearl;
+}
+
+.vcard--footer {
+    @include center-el();
+    display:block;
+    max-width: 15em;
+    text-align: center;
+    @media #{$large-up}{ 
+        display:none;
+    }
+}
+
+.vcard--header {
+    display:none;
+    @media #{$large-up}{ 
+        padding:2rem 0;
+        display:block;
+    }
+}

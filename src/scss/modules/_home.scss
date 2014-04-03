@@ -1,0 +1,30 @@
+.home {
+    height:100vh;
+    position:relative;
+    overflow: hidden;
+
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:10,
+            $collapse:true,
+            $float:right
+            );
+    }
+}
+
+.home__tagline {
+    padding:0 1rem;
+    color:$pearl;
+    line-height: 1;
+    text-align: center;
+    margin:1rem auto 2rem;
+    max-width: 25rem;
+    letter-spacing: 1px;
+    font: {
+        weight:300;
+    }
+
+    @media #{$medium-up} {
+        max-width: 45rem;
+    }
+}
