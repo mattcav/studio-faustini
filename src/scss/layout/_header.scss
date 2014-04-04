@@ -20,6 +20,8 @@
         }
     }
 }
+
+// if <article> _
 .header .logo {
     padding:1rem 0 0rem;
 
@@ -27,8 +29,15 @@
         padding:4rem 0 2rem;
     }
 }
+// else img:
+.header .logo-img {
+    @media #{$large-up} {
+        padding-top:1rem;
+    }
+}
 
 .header .logo,
+.header .logo-img,
 .header .nav,
 .header .vcard {
     @media #{$large-up} {

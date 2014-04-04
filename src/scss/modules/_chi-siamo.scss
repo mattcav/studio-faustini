@@ -1,29 +1,40 @@
 
 .chi-siamo__inner {
+    background: $grey;
+
     @include grid-column(
             $columns:12
         );
     @media #{$medium-up} {
         @include grid-column(
-            $columns:6,
-            $collapse:true,
+            $columns:6,            
             $center:false
         );   
     }
-}
-.blurb {
-    @include grid-column(
-        $columns:12
-        );
-    text-align: center;
-    @extend .punto;
+
     @media #{$large-up} {
-        padding:2rem;
+        position:relative;
+        height:100vh;
     }
 }
-
-.chi-siamo__img {
+.chi-siamo__inner--text {
+    @media #{$large-up} {
+        z-index:5;
+    }
+}
+.chi-siamo__inner--img {
     max-width: 27rem;
+    margin:0 auto;
+    float:none;
+    @media #{$medium-up} {
+        float:right;  
+    } 
+    @media #{$large-up} {
+      padding-left:0;
+      padding-right:0;  
+    }
+}
+.chi-siamo__img {
     margin:2em auto;
     display:block;
     @media #{$medium-up} {

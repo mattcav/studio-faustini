@@ -1,0 +1,36 @@
+.clienti {
+    background: {
+            color:$dark;
+            position:center center;
+            repeat:no-repeat;
+            size:cover;
+        }
+    @media #{$large-up} {
+        overflow: scroll;
+    }    
+}
+
+.blurb--clienti {
+    margin-bottom:3rem;
+    @media #{$large-up}{
+        max-width: 32rem;
+    }
+}
+
+.clienti-elenco {
+    margin-top:0;
+    padding-top:0;
+}
+.cliente {
+    margin-bottom:3rem;
+}
+.cliente__title {
+    font-size:rem-calc(27);
+}
+.cliente__title--last {
+    font-size:rem-calc(23);
+}
+.tipo-cliente {
+    text-align: left;
+}
+

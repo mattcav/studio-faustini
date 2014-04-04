@@ -1,7 +1,22 @@
 .content {
+    @extend .clearfix;
+    margin:0 0 2rem;
+    overflow: hidden;
     @media #{$large-up} {
+        margin:0;
         padding-left:15rem;
         height:100vh;
+    }
+}
+
+.blurb {
+    @include grid-column(
+        $columns:12
+        );
+    text-align: center;
+    @extend .punto;
+    @media #{$large-up} {
+        padding:2rem;
     }
 }
 
