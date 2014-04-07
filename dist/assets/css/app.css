@@ -14,8 +14,8 @@ meta.foundation-mq-medium {
   width: 40.063em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em; }
+  font-family: "/only screen and (min-width:62.063em)/";
+  width: 62.063em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:96.063em)/";
@@ -582,7 +582,7 @@ select {
     right: 91.66667%;
     left: auto; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .column.large-centered, .columns.large-centered {
     margin-left: auto;
     margin-right: auto;
@@ -1583,7 +1583,7 @@ select {
       padding-left: 1.71875rem;
       padding-right: 0rem; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .large-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -4689,7 +4689,7 @@ meta.foundation-mq-topbar {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:40.063em) and (max-width:62em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -4709,7 +4709,7 @@ meta.foundation-mq-topbar {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) and (max-width:90em) {
+@media only screen and (min-width:62.063em) and (max-width:90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -4719,7 +4719,7 @@ meta.foundation-mq-topbar {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -4801,7 +4801,7 @@ meta.foundation-mq-topbar {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:40.063em) and (max-width:62em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -4821,7 +4821,7 @@ meta.foundation-mq-topbar {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) and (max-width:90em) {
+@media only screen and (min-width:62.063em) and (max-width:90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -4831,7 +4831,7 @@ meta.foundation-mq-topbar {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -5172,7 +5172,7 @@ blockquote, blockquote p {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:40.063em) and (max-width:62em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -5192,7 +5192,7 @@ blockquote, blockquote p {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) and (max-width:90em) {
+@media only screen and (min-width:62.063em) and (max-width:90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -5202,7 +5202,7 @@ blockquote, blockquote p {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -5503,7 +5503,7 @@ ul.off-canvas-list {
     display: table-cell !important; } }
 
 /* #{$current-visibility-breakpoint} displays */
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
@@ -5660,7 +5660,7 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .header {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -5690,22 +5690,22 @@ th.hide-for-touch {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    @media only screen and (min-width:64.063em) {
+    @media only screen and (min-width:62.063em) {
       .header {
         position: absolute;
         z-index: 10; } } }
 
 .header .logo {
   padding: 1rem 0 0rem; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .header .logo {
       padding: 4rem 0 2rem; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .header .logo-img {
     padding-top: 1rem; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .header .logo, .header .logo-img, .header .nav, .header .vcard {
     max-width: 12rem;
     margin-left: auto;
@@ -5713,12 +5713,12 @@ th.hide-for-touch {
     float: none !important; } }
 
 .content {
-  margin: 0 0 2rem;
+  margin-bottom: 2rem;
   overflow: hidden; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .content {
-      margin: 0;
-      padding-left: 15rem;
+      margin-bottom: 0;
+      margin-left: 15rem;
       height: 100vh; } }
 
 .blurb {
@@ -5727,23 +5727,9 @@ th.hide-for-touch {
   width: 100%;
   float: left;
   text-align: center; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .blurb {
       padding: 2rem; } }
-
-.vertical-nav {
-  display: block;
-  margin: 0;
-  padding: 0.875rem 0;
-  list-style-type: none;
-  list-style-position: inside; }
-
-.vertical-nav__item {
-  margin: 0 0 0.4375rem 0;
-  font-size: 1rem; }
-
-.vertical-nav__link {
-  display: inline-block; }
 
 .logo__heading {
   color: #f4eed7;
@@ -5774,7 +5760,7 @@ th.hide-for-touch {
   margin: -0.25rem 0 1.125rem;
   padding-top: 0.25rem;
   margin-right: 0; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .nav {
       text-align: left; } }
 
@@ -5788,7 +5774,7 @@ th.hide-for-touch {
   @media only screen and (min-width:40.063em) {
     .nav__item {
       font-size: 1.125rem; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .nav__item {
       display: block; } }
 
@@ -5799,13 +5785,27 @@ th.hide-for-touch {
   .nav__link:hover {
     color: #f4eed7; }
 
+.vertical-nav {
+  display: block;
+  margin: 0;
+  padding: 0.875rem 0;
+  list-style-type: none;
+  list-style-position: inside; }
+
+.vertical-nav__item {
+  margin: 0 0 0.4375rem 0;
+  font-size: 1rem; }
+
+.vertical-nav__link {
+  display: inline-block; }
+
 .vcard {
   font-family: "Lato", courier, helvetica, arial, sans-serif;
   list-style: none;
   font-weight: 300;
   color: #f4eed7;
   border: medium none; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .vcard {
       text-align: left; } }
 
@@ -5822,13 +5822,13 @@ th.hide-for-touch {
   display: block;
   max-width: 15em;
   text-align: center; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .vcard--footer {
       display: none; } }
 
 .vcard--header {
   display: none; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .vcard--header {
       padding: 2rem 0;
       display: block; } }
@@ -5836,7 +5836,7 @@ th.hide-for-touch {
 .home {
   position: relative;
   overflow: hidden; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .home {
       margin-left: 15rem;
       height: 100vh;
@@ -5852,7 +5852,7 @@ th.hide-for-touch {
   @media only screen and (min-width:40.063em) {
     .home-bg {
       height: 32rem; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .home-bg {
       height: 100vh;
       background-size: cover; } }
@@ -5863,7 +5863,7 @@ th.hide-for-touch {
 .home__tagline {
   padding: 0 1rem;
   color: #f4eed7;
-  line-height: 1;
+  line-height: 1.1;
   text-align: center;
   margin: 1rem auto 2rem;
   max-width: 25rem;
@@ -5873,7 +5873,7 @@ th.hide-for-touch {
     .home__tagline {
       max-width: 45rem;
       font-size: 1.6875rem; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .home__tagline {
       position: absolute;
       bottom: 0;
@@ -5882,8 +5882,17 @@ th.hide-for-touch {
       font-size: 2.3125rem;
       text-align: left;
       margin-bottom: 1rem; } }
+  @media only screen and (min-width:96.063em) {
+    .home__tagline {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 45rem;
+      text-align: center; } }
 
 .punti {
+  -webkit-overflow-scrolling: touch;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
@@ -5892,7 +5901,7 @@ th.hide-for-touch {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: #4d4d4d; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .punti {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
@@ -5916,7 +5925,7 @@ th.hide-for-touch {
 .punto__title {
   font-size: 1.4375rem; }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .punti__img {
     height: 100vh;
     width: auto;
@@ -5931,7 +5940,7 @@ th.hide-for-touch {
   @media only screen and (min-width:40.063em) {
     .punti__bg {
       height: 27rem; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .punti__bg {
       height: 100vh;
       width: 50%;
@@ -5949,12 +5958,12 @@ th.hide-for-touch {
       padding-right: 0.9375rem;
       width: 50%;
       float: left; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .chi-siamo__inner {
       position: relative;
       height: 100vh; } }
 
-@media only screen and (min-width:64.063em) {
+@media only screen and (min-width:62.063em) {
   .chi-siamo__inner--text {
     z-index: 5; } }
 
@@ -5965,7 +5974,7 @@ th.hide-for-touch {
   @media only screen and (min-width:40.063em) {
     .chi-siamo__inner--img {
       float: right; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .chi-siamo__inner--img {
       padding-left: 0;
       padding-right: 0; } }
@@ -5978,7 +5987,7 @@ th.hide-for-touch {
       float: right;
       margin: 2em 0 0;
       max-width: 100%; } }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .chi-siamo__img {
       max-width: 1000%;
       margin: 0;
@@ -6006,17 +6015,19 @@ th.hide-for-touch {
   font-size: 1.125rem; }
 
 .clienti {
+  -webkit-overflow-scrolling: touch;
   background-color: #333333;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .clienti {
-      overflow: scroll; } }
+      overflow: scroll;
+      background-image: url('/assets/images/studio@2x.jpg'); } }
 
 .blurb--clienti {
   margin-bottom: 3rem; }
-  @media only screen and (min-width:64.063em) {
+  @media only screen and (min-width:62.063em) {
     .blurb--clienti {
       max-width: 32rem; } }
 
@@ -6047,3 +6058,61 @@ th.hide-for-touch {
 
 hr {
   margin: 1.25rem 2rem 1.1875rem; }
+
+/* entering animations --------------------------------------- */
+/* slide in from the right */
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* slide in from the bottom */
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+/* leaving animations ----------------------------------------- */
+/* slide in from the bottom */
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+@keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+.ng-enter {
+  -webkit-animation: slideInRight 750ms both linear;
+  animation: slideInRight 750ms both linear;
+  z-index: 8888; }
+
+.ng-leave {
+  -webkit-animation: slideOutLeft 500ms both linear;
+  animation: slideOutLeft 500ms both linear;
+  z-index: 9999; }

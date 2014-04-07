@@ -1,4 +1,6 @@
 .clienti {
+    -webkit-overflow-scrolling: touch;
+
     background: {
             color:$dark;
             position:center center;
@@ -7,6 +9,7 @@
         }
     @media #{$large-up} {
         overflow: scroll;
+        background-image:url('/assets/images/studio@2x.jpg');
     }    
 }
 

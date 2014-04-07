@@ -42,6 +42,9 @@ module.exports = function(grunt) {
           'bower_components/jquery/dist/jquery.js',
           'bower_components/foundation/js/foundation.min.js',
           'bower_components/foundation/js/foundation/foundation.interchange.min.js',
+          'bower_components/angular/angular.min.js',
+          'bower_components/angular-route/angular-route.min.js',
+          'bower_components/angular-animate/angular-animate.min.js',
           '<%= config.src %>/js/app.js'
         ],
         dest: '<%= config.dist %>/assets/js/app.js'
@@ -61,16 +64,17 @@ module.exports = function(grunt) {
       },
       your_target: {
         files: {
-          '<%= config.dist %>/assets/css/cmq': ['<%= config.dist %>/assets/css/*.css']
+          '<%= config.dist %>/assets/css/cmq': ['<%= config.dist %>/assets/css/app.css']
         }
       }
     },
 
+
     cssmin: {
       minify: {
         expand: true,
-        cwd: '<%= config.dist %>/assets/css/cmq',
-        src: ['<%= config.dist %>/assets/*.css', '<%= config.dist %>/assets/!*.min.css'],
+        cwd: '<%= config.dist %>/assets/css/cmq/',
+        src: ['*.css', '!*.min.css'],
         dest: '<%= config.dist %>/assets/css/',
         ext: '.min.css'
       }
@@ -121,18 +125,35 @@ module.exports = function(grunt) {
     },
 
     assemble: {
-      pages: {
         options: {
-          flatten: true,
-          assets: '<%= config.dist %>/assets',
-          layout: '<%= config.src %>/templates/layouts/default.hbs',
-          data: '<%= config.src %>/data/*.{json,yml}',
-          partials: '<%= config.src %>/templates/partials/*.hbs'
+          layout: 'default.hbs',
+          layoutdir: '<%= config.src %>/templates/layouts'
         },
-        files: {
-          '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs']
+       
+       pages: {
+          options: {
+            flatten: true,
+            assets: '<%= config.dist %>/assets',
+            data: '<%= config.src %>/data/*.{json,yml}',
+            partials: '<%= config.src %>/templates/partials/*.hbs'  
+          },
+          files: {
+            '<%= config.dist %>/': ['<%= config.src %>/templates/pages/*.hbs'],
+
+          }
+        },
+        components: {
+          options: {
+            flatten: true,
+            layout: 'component.hbs',
+            assets: '<%= config.dist %>/assets',
+            data: '<%= config.src %>/data/*.{json,yml}',
+            partials: '<%= config.src %>/templates/partials/*.hbs' 
+          },
+          files: {
+            '<%= config.dist %>/components/': ['<%= config.src %>/templates/partials/*.hbs']
+          },
         }
-      }
     },
 
     // Before generating any new files,

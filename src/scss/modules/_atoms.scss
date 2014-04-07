@@ -1,10 +1,10 @@
 .content {
     @extend .clearfix;
-    margin:0 0 2rem;
+    margin-bottom:2rem;
     overflow: hidden;
     @media #{$large-up} {
-        margin:0;
-        padding-left:15rem;
+        margin-bottom:0;
+        margin-left:15rem;
         height:100vh;
     }
 }
@@ -18,21 +18,4 @@
     @media #{$large-up} {
         padding:2rem;
     }
-}
-
-.vertical-nav {
-    display: block;
-    margin: 0;
-    padding: 0.875rem 0;
-    list-style-type: none;
-    list-style-position: inside;
-}
-
-.vertical-nav__item {
-    margin: 0 0 0.4375rem 0;
-    font-size: 1rem;
-}
-
-.vertical-nav__link {
-    display:inline-block;
 }

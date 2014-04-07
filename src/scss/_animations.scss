@@ -1,0 +1,29 @@
+/* entering animations --------------------------------------- */
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(-100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+
+/* leaving animations ----------------------------------------- */
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+.ng-enter           { animation: slideInRight 750ms both linear; z-index: 8888; }
+.ng-leave           { animation: slideOutLeft 500ms both linear; z-index: 9999; }

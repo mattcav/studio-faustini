@@ -1,4 +1,5 @@
 .punti {
+    -webkit-overflow-scrolling: touch;
     @include grid-column(
         $columns:12
         );
