@@ -1,4 +1,4 @@
-$(document).foundation();
+// $(document).foundation();
 
 
 // ANGULAR
@@ -39,19 +39,18 @@ $(document).foundation();
     // page controllers
     faustApp.controller('mainController', function($scope) {
         $scope.pageClass = 'page-home';
-        $(document).foundation();
-        $(document).foundation('interchange', 'reflow');
+        // $(document).foundation();
+        // $(document).foundation('interchange', 'reflow');
     });
 
     faustApp.controller('aboutController', function($scope) {
         $scope.pageClass = 'page-chi-siamo';
-        $scope.memberImg ='assets/images/mora.jpg';
     });
 
     faustApp.controller('pdfController', function($scope) {
         $scope.pageClass = 'page-punti-di-forza';
-        $(document).foundation();
-        $(document).foundation('interchange', 'reflow');
+        // $(document).foundation();
+        // $(document).foundation('interchange', 'reflow');
     });
 
     faustApp.controller('clientController', function($scope) {

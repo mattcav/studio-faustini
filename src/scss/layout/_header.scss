@@ -6,8 +6,9 @@
         height:100vh;
         max-width: 15rem;
         background: $dark;
+        position:relative;
+        z-index:9999;
 
-        
         // >IE9
         display:flex;
         flex: 1 1 26em;
@@ -17,7 +18,6 @@
 
         @media #{$large-up} {
             position:absolute;
-            z-index:999;
         }
     }
 }

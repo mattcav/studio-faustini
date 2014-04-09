@@ -5669,6 +5669,8 @@ th.hide-for-touch {
     height: 100vh;
     max-width: 15rem;
     background: #333333;
+    position: relative;
+    z-index: 9999;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5692,8 +5694,7 @@ th.hide-for-touch {
     justify-content: space-between; }
     @media only screen and (min-width:62.063em) {
       .header {
-        position: absolute;
-        z-index: 999; } } }
+        position: absolute; } } }
 
 .header .logo {
   padding: 1rem 0 0rem; }
@@ -5942,7 +5943,8 @@ th.hide-for-touch {
   height: 20rem;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-image: url('../images/faustini.jpg'); }
   @media only screen and (min-width:40.063em) {
     .punti__bg {
       height: 27rem; } }
@@ -5950,7 +5952,8 @@ th.hide-for-touch {
     .punti__bg {
       height: 100vh;
       width: 50%;
-      margin-left: 15rem; } }
+      margin-left: 15rem;
+      background-image: url('../images/faustini2.jpg'); } }
 
 .chi-siamo__inner {
   background: #4d4d4d;

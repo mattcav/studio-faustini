@@ -39,9 +39,9 @@ module.exports = function(grunt) {
     concat: {
       app: {
         src: [
-          'bower_components/jquery/dist/jquery.js',
-          'bower_components/foundation/js/foundation.min.js',
-          'bower_components/foundation/js/foundation/foundation.interchange.min.js',
+          // 'bower_components/jquery/dist/jquery.js',
+          // 'bower_components/foundation/js/foundation.min.js',
+          // 'bower_components/foundation/js/foundation/foundation.interchange.min.js',
           'bower_components/angular/angular.min.js',
           'bower_components/angular-route/angular-route.min.js',
           'bower_components/angular-animate/angular-animate.min.js',
