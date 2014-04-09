@@ -9414,6 +9414,7 @@ $(document).foundation();
 
     faustApp.controller('aboutController', function($scope) {
         $scope.pageClass = 'page-chi-siamo';
+        $scope.memberImg ='assets/images/mora.jpg';
     });
 
     faustApp.controller('pdfController', function($scope) {
@@ -9433,4 +9434,17 @@ $(document).foundation();
         return page === current ? "nav__item--active" : "";
       };       
     }]);
+
+    // members controller
+    faustApp.controller('membersCtrl', ['$scope', function($scope){
+        $scope.memberImg ='assets/images/mora.jpg';
+        $scope.selectedMember = 'roberta'; 
+
+        $scope.setImage = function(imageUrl, name) {
+          $scope.memberImg = imageUrl;
+          $scope.selectedMember = name;    
+        }
+
+
+    }])
 

@@ -1,5 +1,5 @@
 
-<article class="chi-siamo content">
+<article class="chi-siamo content" data-ng-controller="membersCtrl">
     <div class="chi-siamo__inner chi-siamo__inner--text">
         <section class="blurb">
             <h1 class="blurb__title section-title">
@@ -12,15 +12,31 @@
         
         <section class="members">
         <h2 class="members__title">In studio:</h2>
-            <ul class="members__list vertical-nav" data-ng-controller="membersCtrl">
-                <li class="member vertical-nav__item"><a href="#" class="member__link member__link--active vertical-nav__link">Roberta D’Achille</a></li>
-                <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Angela Stangoni</a></li>
-                <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Lorenzo Faustini</a></li>
-                <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Carlotta Cantuti Castelvetri</a></li>
+            <ul class="members__list vertical-nav">
+                <li class="member vertical-nav__item">
+                    <a data-ng-class="{'member--active': 'roberta' == selectedMember}" data-ng-click="setImage('assets/images/mora.jpg', 'roberta')" class="member__link vertical-nav__link">
+                    Roberta D’Achille
+                    </a>
+                </li>
+                <li class="member vertical-nav__item">
+                    <a data-ng-class="{'member--active': 'angela' == selectedMember}" data-ng-click="setImage('assets/images/biondina.jpg', 'angela')" data-ng-class="membersActive" class="member__link vertical-nav__link">
+                    Angela Stangoni
+                    </a>
+                </li>
+                <li class="member vertical-nav__item">
+                    <a data-ng-class="{'member--active': 'lorenzo' == selectedMember}" data-ng-click="setImage('assets/images/faustini2.jpg', 'lorenzo')" class="member__link vertical-nav__link">
+                    Lorenzo Faustini
+                    </a>
+                </li>
+                <li class="member vertical-nav__item">
+                    <a data-ng-class="{'member--active': 'carlotta' == selectedMember}" data-ng-click="setImage('assets/images/bionda.jpg', 'carlotta')" class="member__link vertical-nav__link">
+                    Carlotta Cantuti Castelvetri
+                    </a>
+                </li>
             </ul>
         </section>
     </div>
     <div class="chi-siamo__inner chi-siamo__inner--img">
-        <img src="ng-src="{[{memberImg}]}"" alt="Studio Faustini" class="chi-siamo__img">
+        <img data-ng-src="{[{memberImg}]}" alt="Studio Faustini" class="chi-siamo__img">
     </div>
 </article>

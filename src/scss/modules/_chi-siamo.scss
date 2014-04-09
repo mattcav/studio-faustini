@@ -31,6 +31,7 @@
         float:right;  
     } 
     @media #{$large-up} {
+      max-width: 100%;
       padding-left:0;
       padding-right:0;  
     }
@@ -64,12 +65,11 @@
 .member__link {
     color:$white;
 }
-
-.member__link--active {
+.member--active {
     color:$pearl;
+    border-bottom:1px solid $sea;
     font: {
-        style:italic;
         family:$serif;
-        size:rem-calc(18)
+        size:rem-calc(17)
     }
 }
