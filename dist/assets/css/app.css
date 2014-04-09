@@ -43,7 +43,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Lato", courier, helvetica, arial, sans-serif;
+  font-family: "Lato", verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -867,7 +867,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Lato", courier, helvetica, arial, sans-serif;
+      font-family: "Lato", verdana, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1954,7 +1954,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Lato", courier, helvetica, arial, sans-serif;
+  font-family: "Lato", verdana, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3150,7 +3150,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Lato", courier, helvetica, arial, sans-serif;
+  font-family: "Lato", verdana, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3560,7 +3560,7 @@ ul.pagination {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Lato", courier, helvetica, arial, sans-serif; }
+    font-family: "Lato", verdana, sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -3568,7 +3568,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Lato", courier, helvetica, arial, sans-serif; }
+    font-family: "Lato", verdana, sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -3794,7 +3794,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Lato", courier, helvetica, arial, sans-serif; }
+  font-family: "Lato", verdana, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -3806,7 +3806,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1ccaff;
       font-weight: normal;
-      font-family: "Lato", courier, helvetica, arial, sans-serif; }
+      font-family: "Lato", verdana, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3915,7 +3915,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Lato", courier, helvetica, arial, sans-serif;
+    font-family: "Lato", verdana, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4117,7 +4117,7 @@ table {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Lato", courier, helvetica, arial, sans-serif;
+      font-family: "Lato", verdana, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -4411,7 +4411,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Lato", courier, helvetica, arial, sans-serif;
+    font-family: "Lato", verdana, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
@@ -4914,7 +4914,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Vollkorn", courier, georgia, serif;
+  font-family: "Vollkorn", georgia, serif;
   font-weight: normal;
   font-style: normal;
   color: #7eacb9;
@@ -5740,7 +5740,7 @@ th.hide-for-touch {
 .logo__subheader {
   font-size: 1.4375rem;
   border-top: 2px solid #7eacb9;
-  font-family: "Lato", courier, helvetica, arial, sans-serif;
+  font-family: "Lato", verdana, sans-serif;
   text-transform: uppercase;
   line-height: 2;
   padding-top: 4px; }
@@ -5785,6 +5785,12 @@ th.hide-for-touch {
   .nav__link:hover {
     color: #f4eed7; }
 
+.nav__item--active .nav__link {
+  color: #f4eed7;
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.1875rem; }
+
 .vertical-nav {
   display: block;
   margin: 0;
@@ -5800,7 +5806,7 @@ th.hide-for-touch {
   display: inline-block; }
 
 .vcard {
-  font-family: "Lato", courier, helvetica, arial, sans-serif;
+  font-family: "Lato", verdana, sans-serif;
   list-style: none;
   font-weight: 300;
   color: #f4eed7;
@@ -5948,6 +5954,8 @@ th.hide-for-touch {
 
 .chi-siamo__inner {
   background: #4d4d4d;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
@@ -6011,7 +6019,7 @@ th.hide-for-touch {
 .member__link--active {
   color: #f4eed7;
   font-style: italic;
-  font-family: "Vollkorn", courier, georgia, serif;
+  font-family: "Vollkorn", georgia, serif;
   font-size: 1.125rem; }
 
 .clienti {
@@ -6059,60 +6067,72 @@ th.hide-for-touch {
 hr {
   margin: 1.25rem 2rem 1.1875rem; }
 
-/* entering animations --------------------------------------- */
-/* slide in from the right */
-@-webkit-keyframes slideInRight {
+@-webkit-keyframes fadeIn {
   from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); }
+    opacity: 0; }
 
   to {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-@keyframes slideInRight {
+    opacity: 1; } }
+
+@keyframes fadeIn {
   from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); }
+    opacity: 0; }
 
   to {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
+    opacity: 1; } }
 
-/* slide in from the bottom */
-@-webkit-keyframes slideInUp {
+@-webkit-keyframes fadeOut {
   from {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
+    opacity: 1; }
 
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes slideInUp {
+    opacity: 0; } }
+
+@keyframes fadeOut {
   from {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
+    opacity: 1; }
 
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
-/* leaving animations ----------------------------------------- */
-/* slide in from the bottom */
-@-webkit-keyframes slideOutLeft {
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
-@keyframes slideOutLeft {
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
+    opacity: 0; } }
 
 .ng-enter {
-  -webkit-animation: slideInRight 750ms both linear;
-  animation: slideInRight 750ms both linear;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
   z-index: 8888; }
 
 .ng-leave {
-  -webkit-animation: slideOutLeft 500ms both linear;
-  animation: slideOutLeft 500ms both linear;
-  z-index: 9999; }
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  z-index: 888; }
+
+.page-home.ng-enter {
+  -webkit-animation-delay: 0;
+  animation-delay: 0; }

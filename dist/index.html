@@ -18,11 +18,12 @@
     <a href="./" class="logo-img__link">
       <img class="logo-img" src="assets/images/faustini.png" alt="Faustini Logo">
     </a>
-    <nav class="navigation" role="navigation">
+
+    <nav class="navigation" role="navigation" data-ng-controller="navCtrl">
         <ul class="nav">
-            <li class="nav__item"><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
-            <li class="nav__item"><a href="#punti-di-forza" class="nav__link">Punti di forza</a></li>
-            <li class="nav__item"><a href="#i-nostri-clienti" class="nav__link">I nostri clienti</a></li>
+            <li data-ng-class="navClass('chi-siamo')" class="nav__item"><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
+            <li data-ng-class="navClass('punti-di-forza')" class="nav__item"><a href="#punti-di-forza" class="nav__link">Punti di forza</a></li>
+            <li data-ng-class="navClass('i-nostri-clienti')" class="nav__item"><a href="#i-nostri-clienti" class="nav__link">I nostri clienti</a></li>
         </ul>
     </nav>
 

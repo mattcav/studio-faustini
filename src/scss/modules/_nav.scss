@@ -26,12 +26,24 @@
     }
 }
 
+
 .nav__link {
     color:$white;
     line-height: 2.5;
     padding:0 0.25em 0;
     &:hover {
         color:$pearl;
+    }
+}
+
+.nav__item--active {
+    .nav__link {
+        color:$pearl;
+        font: {
+            style: italic;
+            family: serif;
+            size:rem-calc(19);
+        }
     }
 }
 

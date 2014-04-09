@@ -1,29 +1,39 @@
-/* entering animations --------------------------------------- */
 
-/* slide in from the right */
-@keyframes slideInRight {
-    from    { transform:translateX(-100%); }
-    to      { transform: translateX(0); }
+@keyframes fadeIn {
+    from    { opacity:0; }
+    to      { opacity:1 }
 }
 
-/* slide in from the bottom */
-@keyframes slideInUp {
-    from    { transform:translateY(100%); }
-    to      { transform: translateY(0); }
-}
-
-
-/* leaving animations ----------------------------------------- */
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
+@keyframes fadeOut {
+    from    { opacity:1; }
+    to      { opacity:0; }
 }
 
 
 
+.ng-enter { 
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    z-index: 8888; 
+}
+.ng-leave { 
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    z-index: 888; 
+}
 
-
-
-.ng-enter           { animation: slideInRight 750ms both linear; z-index: 8888; }
-.ng-leave           { animation: slideOutLeft 500ms both linear; z-index: 9999; }
+.page-home.ng-enter { 
+        animation-delay:0;
+    }

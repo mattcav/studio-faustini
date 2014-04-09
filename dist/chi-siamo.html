@@ -18,11 +18,12 @@
     <a href="./" class="logo-img__link">
       <img class="logo-img" src="assets/images/faustini.png" alt="Faustini Logo">
     </a>
-    <nav class="navigation" role="navigation">
+
+    <nav class="navigation" role="navigation" data-ng-controller="navCtrl">
         <ul class="nav">
-            <li class="nav__item"><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
-            <li class="nav__item"><a href="#punti-di-forza" class="nav__link">Punti di forza</a></li>
-            <li class="nav__item"><a href="#i-nostri-clienti" class="nav__link">I nostri clienti</a></li>
+            <li data-ng-class="navClass('chi-siamo')" class="nav__item"><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
+            <li data-ng-class="navClass('punti-di-forza')" class="nav__item"><a href="#punti-di-forza" class="nav__link">Punti di forza</a></li>
+            <li data-ng-class="navClass('i-nostri-clienti')" class="nav__item"><a href="#i-nostri-clienti" class="nav__link">I nostri clienti</a></li>
         </ul>
     </nav>
 
@@ -52,7 +53,7 @@
         
         <section class="members">
         <h2 class="members__title">In studio:</h2>
-            <ul class="members__list vertical-nav">
+            <ul class="members__list vertical-nav" data-ng-controller="membersCtrl">
                 <li class="member vertical-nav__item"><a href="#" class="member__link member__link--active vertical-nav__link">Roberta D’Achille</a></li>
                 <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Angela Stangoni</a></li>
                 <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Lorenzo Faustini</a></li>
@@ -61,7 +62,7 @@
         </section>
     </div>
     <div class="chi-siamo__inner chi-siamo__inner--img">
-        <img src="assets/images/mora.jpg" alt="Studio Faustini" class="chi-siamo__img">
+        <img src="ng-src="{[{memberImg}]}"" alt="Studio Faustini" class="chi-siamo__img">
     </div>
 </article>
 

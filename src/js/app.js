@@ -11,7 +11,6 @@ $(document).foundation();
         $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
         
         $routeProvider
-
             // route for the home page
             .when('/', {
                 templateUrl : 'components/home-content.html',
@@ -37,7 +36,7 @@ $(document).foundation();
             });
     });
 
-    // create the controller and inject Angular's $scope
+    // page controllers
     faustApp.controller('mainController', function($scope) {
         $scope.pageClass = 'page-home';
         $(document).foundation();
@@ -57,3 +56,12 @@ $(document).foundation();
     faustApp.controller('clientController', function($scope) {
         $scope.pageClass = 'page-clienti';
     });
+
+    // nav controller
+    faustApp.controller('navCtrl', ['$scope', '$location', function ($scope, $location) {
+       $scope.navClass = function(page) {
+        var current = $location.path().substring(1);
+        return page === current ? "nav__item--active" : "";
+      };       
+    }]);
+

@@ -12,7 +12,7 @@
         
         <section class="members">
         <h2 class="members__title">In studio:</h2>
-            <ul class="members__list vertical-nav">
+            <ul class="members__list vertical-nav" data-ng-controller="membersCtrl">
                 <li class="member vertical-nav__item"><a href="#" class="member__link member__link--active vertical-nav__link">Roberta D’Achille</a></li>
                 <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Angela Stangoni</a></li>
                 <li class="member vertical-nav__item"><a href="#" class="member__link vertical-nav__link">Lorenzo Faustini</a></li>
@@ -21,6 +21,6 @@
         </section>
     </div>
     <div class="chi-siamo__inner chi-siamo__inner--img">
-        <img src="assets/images/mora.jpg" alt="Studio Faustini" class="chi-siamo__img">
+        <img src="ng-src="{[{memberImg}]}"" alt="Studio Faustini" class="chi-siamo__img">
     </div>
 </article>
