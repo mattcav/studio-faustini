@@ -1,4 +1,6 @@
 
+
+
 @keyframes fadeIn {
     from    { opacity:0; }
     to      { opacity:1 }
@@ -9,31 +11,130 @@
     to      { opacity:0; }
 }
 
+@keyframes enterRotateY {
+    from   {transform: rotateY(40deg);}
+    to     {transform: rotateY(0deg);} 
+}
+@keyframes leaveRotateY {
+    from   {transform: rotateY(0deg);}
+    to     {transform: rotateY(40deg);} 
+}
+
+@keyframes enterSlider {
+    from   {transform: translateX(-100%); }
+    to     {transform: translateX(0%); } 
+}
+@keyframes leaveSlider {
+    from   {transform: translateX(0%);}
+    to     {transform: translateX(-100%);} 
+}
 
 
 .ng-enter { 
     animation-name: fadeIn;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    animation-delay: 2s;
+    animation-delay: 500ms;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-play-state: running;
-    z-index: 8888; 
+    position:relative;
+    z-index: 888 !important; 
 }
 .ng-leave { 
     animation-name: fadeOut;
-    animation-duration: 2s;
+    animation-duration: 500ms;
     animation-timing-function: ease-in-out;
     animation-delay: 0ms;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-play-state: running;
-    z-index: 888; 
+    position:relative;
+    z-index: 999 !important; 
 }
 
-.page-home.ng-enter { 
+.page-home {
+    &.ng-enter { 
         animation-delay:0;
     }
+}
+
+.page-chi-siamo {
+    .chi-siamo {
+        perspective: 1000px;
+    }
+    &.ng-enter {
+        .chi-siamo__inner {
+            animation-name: enterRotateY;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0ms;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+    }
+    &.ng-leave {
+        .chi-siamo__inner {
+            animation-name: leaveRotateY;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+    }
+}
+
+.page-punti-di-forza {
+    &.ng-enter {
+        .pdf__inner {
+            animation-name: enterSlider;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0ms;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+    }
+    &.ng-leave {
+        .pdf__inner {
+            animation-name: leaveSlider;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+    }
+}
+
+.animate-show, .animate-hide {
+  transition:all linear 1s;
+
+}
+
+.animate-show {
+  opacity:0;
+}
+
+.animate-show.animate-show-active {
+  opacity:1;
+}
+
+.animate-hide {
+  opacity:1;
+}
+
+.animate-hide.animate-hide-active {
+  opacity:0;
+}
